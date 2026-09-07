@@ -40,6 +40,7 @@ const productSchema = new Schema<IProduct>({
   },
   price: {
     type: Number,
+    min: [0, 'Цена не может быть отрицательной'],
     default: null,
   },
 });
